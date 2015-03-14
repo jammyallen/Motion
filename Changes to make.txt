@@ -1,0 +1,14 @@
+RunCode
+-empty the while loop
+-move time = 10 and Timer() to MotionDetected
+
+Motion Sensor Interrupt Action
+- go straight to MotionDetected
+- delete alarm variable
+
+NewPasswordEntry and EnterNewPassword and PasswordEntry
+- remove the count value, only use digitPosition
+- rename digitPosition, maybe just digit?
+
+CheckCode
+- remove the code that is labled for removal

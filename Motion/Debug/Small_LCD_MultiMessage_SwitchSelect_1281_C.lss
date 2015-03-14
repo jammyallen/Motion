@@ -1,0 +1,496 @@
+
+Small_LCD_MultiMessage_SwitchSelect_1281_C.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000054  00800200  000002cc  00000360  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000002cc  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000001  00800254  00800254  000003b4  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000003b4  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 000000d0  00000000  00000000  000003e4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000779  00000000  00000000  000004b4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000168  00000000  00000000  00000c2d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002ef  00000000  00000000  00000d95  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000001b8  00000000  00000000  00001084  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000003a7  00000000  00000000  0000123c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000371  00000000  00000000  000015e3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 000000c0  00000000  00000000  00001954  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 66 00 	jmp	0xcc	; 0xcc <__ctors_end>
+   4:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+   8:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+   c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  10:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  14:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  18:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  1c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  20:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  24:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  28:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  2c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  30:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  34:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  38:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  3c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  40:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  44:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  48:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  4c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  50:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  54:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  58:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  5c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  60:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  64:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  68:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  6c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  70:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  74:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  78:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  7c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  80:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  84:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  88:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  8c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  90:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  94:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  98:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  9c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  a0:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  a4:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  a8:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  ac:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  b0:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  b4:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  b8:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  bc:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  c0:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  c4:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  c8:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+
+000000cc <__ctors_end>:
+  cc:	11 24       	eor	r1, r1
+  ce:	1f be       	out	0x3f, r1	; 63
+  d0:	cf ef       	ldi	r28, 0xFF	; 255
+  d2:	d1 e2       	ldi	r29, 0x21	; 33
+  d4:	de bf       	out	0x3e, r29	; 62
+  d6:	cd bf       	out	0x3d, r28	; 61
+
+000000d8 <__do_copy_data>:
+  d8:	12 e0       	ldi	r17, 0x02	; 2
+  da:	a0 e0       	ldi	r26, 0x00	; 0
+  dc:	b2 e0       	ldi	r27, 0x02	; 2
+  de:	ec ec       	ldi	r30, 0xCC	; 204
+  e0:	f2 e0       	ldi	r31, 0x02	; 2
+  e2:	00 e0       	ldi	r16, 0x00	; 0
+  e4:	0b bf       	out	0x3b, r16	; 59
+  e6:	02 c0       	rjmp	.+4      	; 0xec <__do_copy_data+0x14>
+  e8:	07 90       	elpm	r0, Z+
+  ea:	0d 92       	st	X+, r0
+  ec:	a4 35       	cpi	r26, 0x54	; 84
+  ee:	b1 07       	cpc	r27, r17
+  f0:	d9 f7       	brne	.-10     	; 0xe8 <__do_copy_data+0x10>
+
+000000f2 <__do_clear_bss>:
+  f2:	22 e0       	ldi	r18, 0x02	; 2
+  f4:	a4 e5       	ldi	r26, 0x54	; 84
+  f6:	b2 e0       	ldi	r27, 0x02	; 2
+  f8:	01 c0       	rjmp	.+2      	; 0xfc <.do_clear_bss_start>
+
+000000fa <.do_clear_bss_loop>:
+  fa:	1d 92       	st	X+, r1
+
+000000fc <.do_clear_bss_start>:
+  fc:	a5 35       	cpi	r26, 0x55	; 85
+  fe:	b2 07       	cpc	r27, r18
+ 100:	e1 f7       	brne	.-8      	; 0xfa <.do_clear_bss_loop>
+ 102:	0e 94 08 01 	call	0x210	; 0x210 <main>
+ 106:	0c 94 64 01 	jmp	0x2c8	; 0x2c8 <_exit>
+
+0000010a <__bad_interrupt>:
+ 10a:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000010e <lcd_Wait>:
+//	WR=0
+//	RD=1
+
+void lcd_Wait()		// Check if the LCD device is busy, if so wait
+{	
+	PORTC &= 0b00111111; // Clear enable (bit 7), clear Register select (bit 6) 
+ 10e:	88 b1       	in	r24, 0x08	; 8
+ 110:	8f 73       	andi	r24, 0x3F	; 63
+ 112:	88 b9       	out	0x08, r24	; 8
+						 // (Set RS low (command register) so can read busy flag)
+	PORTG &= 0b11111101; // Clear RD (bit 1) for read operation
+ 114:	a1 98       	cbi	0x14, 1	; 20
+	PORTG |= 0b00000001; // Set WR (bit 0) for read operation
+ 116:	a0 9a       	sbi	0x14, 0	; 20
+	DDRA &= 0b01111111;  // High bit of port A is Busy Flag (BF, bit 7), set to input
+ 118:	0f 98       	cbi	0x01, 7	; 1
+	PORTC |= 0b10000000; // Set enable (bit 7)
+ 11a:	47 9a       	sbi	0x08, 7	; 8
+
+	while(PINA & 0b10000000); // Wait here until busy flag is cleared
+ 11c:	07 99       	sbic	0x00, 7	; 0
+ 11e:	fe cf       	rjmp	.-4      	; 0x11c <lcd_Wait+0xe>
+
+	PORTC &= 0b01111111; // Clear enable (bit 7)
+ 120:	47 98       	cbi	0x08, 7	; 8
+	PORTG &= 0b11111110; // Clear WR (bit 0) for write operation
+ 122:	a0 98       	cbi	0x14, 0	; 20
+	PORTG |= 0b00000010; // Set RD (bit 1) for write operation
+ 124:	a1 9a       	sbi	0x14, 1	; 20
+	DDRA |= 0b10000000;  // Restore bit 7 of port A to output (for Data use)
+ 126:	0f 9a       	sbi	0x01, 7	; 1
+ 128:	08 95       	ret
+
+0000012a <lcd_WriteFunctionCommand>:
+}
+
+void lcd_WriteFunctionCommand()	// Output the function command in LCDreg to the LCD
+{
+	lcd_Wait(); 		// Wait if the LCD device is busy
+ 12a:	0e 94 87 00 	call	0x10e	; 0x10e <lcd_Wait>
+	PORTC &= 0b10111111; // Clear Register select (bit 6) 
+ 12e:	46 98       	cbi	0x08, 6	; 8
+	PORTC |= 0b10000000; // Set enable (bit 7)
+ 130:	47 9a       	sbi	0x08, 7	; 8
+	PORTA = LCDreg;	// Send function command to command register, via port A
+ 132:	80 91 54 02 	lds	r24, 0x0254
+ 136:	82 b9       	out	0x02, r24	; 2
+	PORTC &= 0b01111111; // Clear enable (bit 7)
+ 138:	47 98       	cbi	0x08, 7	; 8
+ 13a:	08 95       	ret
+
+0000013c <lcd_ReadFunctionCommand>:
+}
+
+void lcd_ReadFunctionCommand()	// Read the function command from the LCD into LCDreg
+{	
+	lcd_Wait(); 		// Wait if the LCD device is busy
+ 13c:	0e 94 87 00 	call	0x10e	; 0x10e <lcd_Wait>
+	PORTC &= 0b10111111; // Clear Register select (bit 6)
+ 140:	46 98       	cbi	0x08, 6	; 8
+	PORTC |= 0b10000000; // Set enable (bit 7)
+ 142:	47 9a       	sbi	0x08, 7	; 8
+	LCDreg = PORTA;	// Read the command register via port A
+ 144:	82 b1       	in	r24, 0x02	; 2
+ 146:	80 93 54 02 	sts	0x0254, r24
+	PORTC &= 0b01111111; // Clear enable (bit 7)
+ 14a:	47 98       	cbi	0x08, 7	; 8
+ 14c:	08 95       	ret
+
+0000014e <lcd_Clear>:
+}
+
+void lcd_Clear()	// Clear the LCD display and set the cursor to the 'home' position
+{	
+	LCDreg = 0x01; 				// The 'clear' command
+ 14e:	81 e0       	ldi	r24, 0x01	; 1
+ 150:	80 93 54 02 	sts	0x0254, r24
+	lcd_WriteFunctionCommand(); // Output the command to the LCD
+ 154:	0e 94 95 00 	call	0x12a	; 0x12a <lcd_WriteFunctionCommand>
+ 158:	08 95       	ret
+
+0000015a <lcd_StandardMode>:
+}
+
+void lcd_StandardMode()	// Set the LCD to 8-bit-mode, display window freeze and
+						// automatic cursor increment (standard mode)
+{
+	LCDreg = 0b00111000; 			// Command for 8-Bit-transfer
+ 15a:	88 e3       	ldi	r24, 0x38	; 56
+ 15c:	80 93 54 02 	sts	0x0254, r24
+	lcd_WriteFunctionCommand(); 	// Output the command to the LCD
+ 160:	0e 94 95 00 	call	0x12a	; 0x12a <lcd_WriteFunctionCommand>
+	LCDreg = 0b00000110; 			// Command for Increment, display freeze
+ 164:	86 e0       	ldi	r24, 0x06	; 6
+ 166:	80 93 54 02 	sts	0x0254, r24
+	lcd_WriteFunctionCommand(); 	// Output the command to the LCD
+ 16a:	0e 94 95 00 	call	0x12a	; 0x12a <lcd_WriteFunctionCommand>
+	LCDreg = 0b00010000; 			// Command for Cursor move, not shift
+ 16e:	80 e1       	ldi	r24, 0x10	; 16
+ 170:	80 93 54 02 	sts	0x0254, r24
+	lcd_WriteFunctionCommand(); 	// Output the command to the LCD
+ 174:	0e 94 95 00 	call	0x12a	; 0x12a <lcd_WriteFunctionCommand>
+ 178:	08 95       	ret
+
+0000017a <lcd_SetCursor>:
+}
+
+void lcd_SetCursor(unsigned char cursorPosition)	// Set cursor on the LCD to a specific display position
+{
+	LCDreg = cursorPosition | 0b10000000; 	// Set bit 7 of the byte
+ 17a:	80 68       	ori	r24, 0x80	; 128
+ 17c:	80 93 54 02 	sts	0x0254, r24
+	lcd_WriteFunctionCommand(); 	// Output the command to the LCD
+ 180:	0e 94 95 00 	call	0x12a	; 0x12a <lcd_WriteFunctionCommand>
+ 184:	08 95       	ret
+
+00000186 <lcd_WriteChar>:
+}
+
+void lcd_WriteChar(unsigned char cValue)	// Write the character in LCDreg to the display at the current cursor
+											// position (the position is incremented after write)	
+{
+ 186:	cf 93       	push	r28
+ 188:	c8 2f       	mov	r28, r24
+	lcd_Wait(); 		// Wait if the LCD device is busy
+ 18a:	0e 94 87 00 	call	0x10e	; 0x10e <lcd_Wait>
+	PORTC |= 0b11000000;// Set enable (bit 7), Set RS (bit 6) (for data)
+ 18e:	88 b1       	in	r24, 0x08	; 8
+ 190:	80 6c       	ori	r24, 0xC0	; 192
+ 192:	88 b9       	out	0x08, r24	; 8
+	PORTA = cValue;  	// Write data character to LCD
+ 194:	c2 b9       	out	0x02, r28	; 2
+	PORTC &= 0b01111111;// Clear enable (bit 7)
+ 196:	47 98       	cbi	0x08, 7	; 8
+}
+ 198:	cf 91       	pop	r28
+ 19a:	08 95       	ret
+
+0000019c <lcd_WriteString>:
+
+void lcd_WriteString(unsigned char Text[])
+{
+ 19c:	1f 93       	push	r17
+ 19e:	cf 93       	push	r28
+ 1a0:	df 93       	push	r29
+ 1a2:	ec 01       	movw	r28, r24
+	unsigned char Index;
+	for(Index = 0;Index < strlen(Text); Index++)
+ 1a4:	10 e0       	ldi	r17, 0x00	; 0
+ 1a6:	07 c0       	rjmp	.+14     	; 0x1b6 <lcd_WriteString+0x1a>
+	{
+		lcd_WriteChar(Text[Index]);
+ 1a8:	fe 01       	movw	r30, r28
+ 1aa:	e8 0f       	add	r30, r24
+ 1ac:	f9 1f       	adc	r31, r25
+ 1ae:	80 81       	ld	r24, Z
+ 1b0:	0e 94 c3 00 	call	0x186	; 0x186 <lcd_WriteChar>
+}
+
+void lcd_WriteString(unsigned char Text[])
+{
+	unsigned char Index;
+	for(Index = 0;Index < strlen(Text); Index++)
+ 1b4:	1f 5f       	subi	r17, 0xFF	; 255
+ 1b6:	81 2f       	mov	r24, r17
+ 1b8:	90 e0       	ldi	r25, 0x00	; 0
+ 1ba:	fe 01       	movw	r30, r28
+ 1bc:	01 90       	ld	r0, Z+
+ 1be:	00 20       	and	r0, r0
+ 1c0:	e9 f7       	brne	.-6      	; 0x1bc <lcd_WriteString+0x20>
+ 1c2:	31 97       	sbiw	r30, 0x01	; 1
+ 1c4:	ec 1b       	sub	r30, r28
+ 1c6:	fd 0b       	sbc	r31, r29
+ 1c8:	8e 17       	cp	r24, r30
+ 1ca:	9f 07       	cpc	r25, r31
+ 1cc:	68 f3       	brcs	.-38     	; 0x1a8 <lcd_WriteString+0xc>
+	{
+		lcd_WriteChar(Text[Index]);
+	}
+}
+ 1ce:	df 91       	pop	r29
+ 1d0:	cf 91       	pop	r28
+ 1d2:	1f 91       	pop	r17
+ 1d4:	08 95       	ret
+
+000001d6 <lcd_on>:
+ 
+void lcd_on()	// Set LCD display on, cursor on and blink on
+{
+	LCDreg = 0b00001111; 			// Combined command byte
+ 1d6:	8f e0       	ldi	r24, 0x0F	; 15
+ 1d8:	80 93 54 02 	sts	0x0254, r24
+	lcd_WriteFunctionCommand(); 	// Output the command to the LCD
+ 1dc:	0e 94 95 00 	call	0x12a	; 0x12a <lcd_WriteFunctionCommand>
+ 1e0:	08 95       	ret
+
+000001e2 <lcd_CursorOff>:
+	lcd_WriteFunctionCommand(); 	// Output the command to the LCD
+}
+
+void lcd_CursorOff()	// Set Cursor Off	
+{
+	lcd_ReadFunctionCommand();	// Input the command register value into the LCDreg
+ 1e2:	0e 94 9e 00 	call	0x13c	; 0x13c <lcd_ReadFunctionCommand>
+	LCDreg &= 0b11111101;		// Command value to set cursor off
+ 1e6:	80 91 54 02 	lds	r24, 0x0254
+ 1ea:	8d 7f       	andi	r24, 0xFD	; 253
+ 1ec:	80 93 54 02 	sts	0x0254, r24
+	lcd_WriteFunctionCommand(); // Output the command to the LCD
+ 1f0:	0e 94 95 00 	call	0x12a	; 0x12a <lcd_WriteFunctionCommand>
+ 1f4:	08 95       	ret
+
+000001f6 <lcd_CursorPositionOff>:
+	lcd_WriteFunctionCommand();	// Output the command to the LCD
+}
+
+void lcd_CursorPositionOff()	// Set Cursor Position Indicator Off
+{
+	LCDreg = 0b00001100; 			// Command value to set cursor position indicator off
+ 1f6:	8c e0       	ldi	r24, 0x0C	; 12
+ 1f8:	80 93 54 02 	sts	0x0254, r24
+	lcd_WriteFunctionCommand(); 	// Output the command to the LCD
+ 1fc:	0e 94 95 00 	call	0x12a	; 0x12a <lcd_WriteFunctionCommand>
+ 200:	08 95       	ret
+
+00000202 <InitialiseGeneral>:
+	}
+}
+
+void InitialiseGeneral()
+{
+	DDRA = 0xFF;			// Configure PortA direction Output
+ 202:	8f ef       	ldi	r24, 0xFF	; 255
+ 204:	81 b9       	out	0x01, r24	; 1
+	DDRC = 0xFF;			// Configure PortC direction Output
+ 206:	87 b9       	out	0x07, r24	; 7
+	DDRG = 0xFF;			// Configure PortG direction Output
+ 208:	83 bb       	out	0x13, r24	; 19
+
+	DDRD = 0x00;			// Configure PortD direction Input (Switches)
+ 20a:	1a b8       	out	0x0a, r1	; 10
+	
+	sei();	// Enable interrupts at global level set Global Interrupt Enable (I) bit
+ 20c:	78 94       	sei
+ 20e:	08 95       	ret
+
+00000210 <main>:
+void InitialiseGeneral();
+
+int main( void )
+{
+	unsigned char Switches_Value;
+	InitialiseGeneral();
+ 210:	0e 94 01 01 	call	0x202	; 0x202 <InitialiseGeneral>
+
+	lcd_Clear();				// Clear the display
+ 214:	0e 94 a7 00 	call	0x14e	; 0x14e <lcd_Clear>
+	lcd_StandardMode();			// Set Standard display mode
+ 218:	0e 94 ad 00 	call	0x15a	; 0x15a <lcd_StandardMode>
+	lcd_on();					// Set the display on
+ 21c:	0e 94 eb 00 	call	0x1d6	; 0x1d6 <lcd_on>
+	lcd_CursorOff();			// Set the cursor display off (underscore)
+ 220:	0e 94 f1 00 	call	0x1e2	; 0x1e2 <lcd_CursorOff>
+	lcd_CursorPositionOff();	// Set the cursor position indicator off (flashing square)
+ 224:	0e 94 fb 00 	call	0x1f6	; 0x1f6 <lcd_CursorPositionOff>
+
+	lcd_SetCursor(0x00);		// Set cursor position to line 1, col 0
+ 228:	80 e0       	ldi	r24, 0x00	; 0
+ 22a:	0e 94 bd 00 	call	0x17a	; 0x17a <lcd_SetCursor>
+	lcd_WriteString("Press one of the");
+ 22e:	80 e0       	ldi	r24, 0x00	; 0
+ 230:	92 e0       	ldi	r25, 0x02	; 2
+ 232:	0e 94 ce 00 	call	0x19c	; 0x19c <lcd_WriteString>
+	lcd_SetCursor(0x40);		// Set cursor position to line 2, col 0
+ 236:	80 e4       	ldi	r24, 0x40	; 64
+ 238:	0e 94 bd 00 	call	0x17a	; 0x17a <lcd_SetCursor>
+	lcd_WriteString("switches 0-3");
+ 23c:	81 e1       	ldi	r24, 0x11	; 17
+ 23e:	92 e0       	ldi	r25, 0x02	; 2
+ 240:	0e 94 ce 00 	call	0x19c	; 0x19c <lcd_WriteString>
+			
+    while(1)
+    {	
+		Switches_Value = PIND;	// Read value on switches
+ 244:	c9 b1       	in	r28, 0x09	; 9
+
+		if(0 == (Switches_Value & 0b00000001)) // Switches are inverted, so when pressed will give a '0'
+ 246:	c0 fd       	sbrc	r28, 0
+ 248:	0c c0       	rjmp	.+24     	; 0x262 <main+0x52>
+		{	// Switch 0 pressed
+			lcd_Clear();				// Clear the display
+ 24a:	0e 94 a7 00 	call	0x14e	; 0x14e <lcd_Clear>
+			lcd_SetCursor(0x00);		// 0b00000010	Set cursor position to line 1, col 0
+ 24e:	80 e0       	ldi	r24, 0x00	; 0
+ 250:	0e 94 bd 00 	call	0x17a	; 0x17a <lcd_SetCursor>
+			lcd_WriteChar(0xF7);		// Write a specific character - see the LCD manual for details
+ 254:	87 ef       	ldi	r24, 0xF7	; 247
+ 256:	0e 94 c3 00 	call	0x186	; 0x186 <lcd_WriteChar>
+			lcd_WriteString(" says Hi ");
+ 25a:	8e e1       	ldi	r24, 0x1E	; 30
+ 25c:	92 e0       	ldi	r25, 0x02	; 2
+ 25e:	0e 94 ce 00 	call	0x19c	; 0x19c <lcd_WriteString>
+		}				
+		if(0 == (Switches_Value & 0b00000010)) // Switches are inverted, so when pressed will give a '0'
+ 262:	c1 fd       	sbrc	r28, 1
+ 264:	0c c0       	rjmp	.+24     	; 0x27e <main+0x6e>
+		{	// Switch 1 pressed
+			lcd_Clear();				// Clear the display
+ 266:	0e 94 a7 00 	call	0x14e	; 0x14e <lcd_Clear>
+			lcd_SetCursor(0x00);		// 0b00000010	Set cursor position to line 1, col 0
+ 26a:	80 e0       	ldi	r24, 0x00	; 0
+ 26c:	0e 94 bd 00 	call	0x17a	; 0x17a <lcd_SetCursor>
+			lcd_WriteChar(0xF8);		// Write a specific character - see the LCD manual for details
+ 270:	88 ef       	ldi	r24, 0xF8	; 248
+ 272:	0e 94 c3 00 	call	0x186	; 0x186 <lcd_WriteChar>
+			lcd_WriteString("ichard says Bye");
+ 276:	88 e2       	ldi	r24, 0x28	; 40
+ 278:	92 e0       	ldi	r25, 0x02	; 2
+ 27a:	0e 94 ce 00 	call	0x19c	; 0x19c <lcd_WriteString>
+		}				
+		if(0 == (Switches_Value & 0b00000100)) // Switches are inverted, so when pressed will give a '0'
+ 27e:	c2 fd       	sbrc	r28, 2
+ 280:	10 c0       	rjmp	.+32     	; 0x2a2 <main+0x92>
+		{	// Switch 2 pressed
+			lcd_Clear();				// Clear the display
+ 282:	0e 94 a7 00 	call	0x14e	; 0x14e <lcd_Clear>
+			lcd_SetCursor(0x02);		// 0b00000010	Set cursor position to line 1, col 2
+ 286:	82 e0       	ldi	r24, 0x02	; 2
+ 288:	0e 94 bd 00 	call	0x17a	; 0x17a <lcd_SetCursor>
+			lcd_WriteString("Richard says");
+ 28c:	88 e3       	ldi	r24, 0x38	; 56
+ 28e:	92 e0       	ldi	r25, 0x02	; 2
+ 290:	0e 94 ce 00 	call	0x19c	; 0x19c <lcd_WriteString>
+			lcd_SetCursor(0x45);		// 0b01000101	Set cursor position to line 2, col 5
+ 294:	85 e4       	ldi	r24, 0x45	; 69
+ 296:	0e 94 bd 00 	call	0x17a	; 0x17a <lcd_SetCursor>
+			lcd_WriteString("Hello");
+ 29a:	85 e4       	ldi	r24, 0x45	; 69
+ 29c:	92 e0       	ldi	r25, 0x02	; 2
+ 29e:	0e 94 ce 00 	call	0x19c	; 0x19c <lcd_WriteString>
+		}
+		if(0 == (Switches_Value & 0b00001000)) // Switches are inverted, so when pressed will give a '0'
+ 2a2:	c3 fd       	sbrc	r28, 3
+ 2a4:	cf cf       	rjmp	.-98     	; 0x244 <main+0x34>
+		{	// Switch 3 pressed
+			lcd_Clear();				// Clear the display
+ 2a6:	0e 94 a7 00 	call	0x14e	; 0x14e <lcd_Clear>
+			lcd_SetCursor(0x02);		// 0b00000010	Set cursor position to line 1, col 2
+ 2aa:	82 e0       	ldi	r24, 0x02	; 2
+ 2ac:	0e 94 bd 00 	call	0x17a	; 0x17a <lcd_SetCursor>
+			lcd_WriteString("Richard says");
+ 2b0:	88 e3       	ldi	r24, 0x38	; 56
+ 2b2:	92 e0       	ldi	r25, 0x02	; 2
+ 2b4:	0e 94 ce 00 	call	0x19c	; 0x19c <lcd_WriteString>
+			lcd_SetCursor(0x45);		// 0b01000101	Set cursor position to line 2, col 5
+ 2b8:	85 e4       	ldi	r24, 0x45	; 69
+ 2ba:	0e 94 bd 00 	call	0x17a	; 0x17a <lcd_SetCursor>
+			lcd_WriteString("Goodbye");
+ 2be:	8b e4       	ldi	r24, 0x4B	; 75
+ 2c0:	92 e0       	ldi	r25, 0x02	; 2
+ 2c2:	0e 94 ce 00 	call	0x19c	; 0x19c <lcd_WriteString>
+ 2c6:	be cf       	rjmp	.-132    	; 0x244 <main+0x34>
+
+000002c8 <_exit>:
+ 2c8:	f8 94       	cli
+
+000002ca <__stop_program>:
+ 2ca:	ff cf       	rjmp	.-2      	; 0x2ca <__stop_program>
